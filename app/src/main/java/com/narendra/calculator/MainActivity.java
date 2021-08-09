@@ -147,12 +147,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void ce(View v){
 
-        if(number1.hasFocus()){
+        if(number1.hasFocus() && !number1.getText().toString().equals("")){
             String s=number1.getText().toString();
             s=s.substring(0,s.length()-1);
             number1.setText(s);
         }
-        if(number2.hasFocus()){
+        if(number2.hasFocus() && !number2.getText().toString().equals("")){
             String s=number2.getText().toString();
             s=s.substring(0,s.length()-1);
             number2.setText(s);
